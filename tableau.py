@@ -23,10 +23,6 @@ class Tableau(object):
 		for j in range(0,self.constraints_count):
 			self.tableau.append([]) # insert line
 			for i in range(0,self.var_count):
-				# print 'tableau',self.tableau
-				# print i,j
-				# print 'constain',self.constraints[j]
-				# print self.constraints[j][i]
 				self.tableau[j].append(float(self.constraints[j][i]))
 
 			for i in range(self.var_count,self.columns-1):
